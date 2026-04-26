@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HomePage from "@/components/Home/HomePage";
 
 export default function Home() {
 	return (
-		<div>
-			<h2 className="text-center text-2xl text-blue-800 underline font-bold">HomePage</h2>
+		<div className="container mx-auto">
+			<HomePage></HomePage>
 		</div>
 	);
 }
