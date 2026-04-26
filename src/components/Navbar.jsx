@@ -1,22 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@heroui/react";
 import userAvater from "@/assets/user.png";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
     return (
         <div className="container mx-auto flex  items-center mt-8.5">
             <div className="flex-1"></div>
 
-            <ul className="flex-1 flex justify-center items-center gap-4">
+            <ul className="flex-1 flex justify-center items-center gap-4 text-lg text-[#706F6F] font-medium">
                 <li>
-                    <Link href="/">Home</Link>
+                    <NavLink href="/">Home</NavLink>
                 </li>
                 <li>
-                    <Link href="/about">About</Link>
+                    <NavLink href="/about">About</NavLink>
                 </li>
                 <li>
-                    <Link href="/career">Career</Link>
+                    <NavLink href="/career">Career</NavLink>
                 </li>
             </ul>
 
