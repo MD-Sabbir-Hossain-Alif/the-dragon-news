@@ -83,22 +83,22 @@ const RightSideBar = () => {
                     <Image
                         src={Swimming}
                         alt="swimming"
-                        height={100}
-                        width={100}
+                        height={220}
+                        width={260}
                         className="w-full h-auto"
                     ></Image>
                     <Image
                         src={Class}
                         alt="swimming"
-                        height={100}
-                        width={100}
+                        height={220}
+                        width={260}
                         className="w-full h-auto"
                     ></Image>
                     <Image
                         src={PlayGround}
                         alt="swimming"
-                        height={100}
-                        width={100}
+                        height={220}
+                        width={260}
                         className="w-full h-auto"
                     ></Image>
                 </div>
@@ -107,8 +107,8 @@ const RightSideBar = () => {
                 <Image
                     src={BG}
                     alt="swimming"
-                    height={100}
-                    width={100}
+                    height={500}
+                    width={260}
                     className="w-full h-auto mt-5"
                 ></Image>
             </div>

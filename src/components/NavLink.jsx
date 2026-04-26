@@ -6,11 +6,18 @@ import { usePathname } from "next/navigation";
 const NavLink = ({ href, children }) => {
     const pathName = usePathname();
     // console.log("pathName", pathName);
-    const isActive = pathName === href;
+    let isActive = false;
+
+    if (href === "/") {
+        // Home active on homepage AND category pages
+        isActive = pathName === "/" || pathName.startsWith("/category/");
+    } else {
+        isActive = pathName === href;
+    }
     return (
         <Link
             href={href}
-            className={`${isActive ? "border-b-3 border-b-black" : ""}`}
+            className={`${isActive && "border-b-3 border-b-black"}`}
         >
             {children}
         </Link>
