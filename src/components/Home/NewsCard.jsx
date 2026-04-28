@@ -43,6 +43,7 @@ const NewsCard = ({ newsItem }) => {
                         alt={title}
                         height={260}
                         width={520}
+                        loading="eager"
                         className="w-full mt-5 mb-8"
                     ></Image>
                     <NewsDescription details={details}></NewsDescription>
@@ -60,7 +61,7 @@ const NewsCard = ({ newsItem }) => {
                                 <span>{total_view}</span>
                             </div>
                         </div>
-                        <Button variant="outline">
+                        <Button className="rounded-none" variant="outline">
                             <Link href={`/news/${newsItem._id}`}>
                                 See Details
                             </Link>
