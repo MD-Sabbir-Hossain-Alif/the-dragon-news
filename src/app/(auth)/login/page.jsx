@@ -1,3 +1,5 @@
+import Login from "@/components/Auth/Login";
+
 export const metadata = {
     title: "The Dragon News - Login",
     description: "Dragon News Login Page",
@@ -5,8 +7,8 @@ export const metadata = {
 
 const LoginPage = () => {
     return (
-        <div>
-            <h2>Login page</h2>
+        <div className="container mx-auto my-15">
+            <Login></Login>
         </div>
     );
 };

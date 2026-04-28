@@ -17,7 +17,7 @@ const NewsDetails = ({ news }) => {
                 className="w-full mb-5"
             ></Image>
             <h4 className="text-2xl font-bold leading-11 mb-2">{title}</h4>
-            <p className="mb-8">{details}</p>
+            <p className="mb-8 text-[#706F6F]">{details}</p>
 
             <Button
                 className="rounded-none text-white bg-[#D72050]"

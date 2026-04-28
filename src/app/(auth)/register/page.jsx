@@ -1,3 +1,5 @@
+import Register from "@/components/Auth/Register";
+
 export const metadata = {
     title: "The Dragon News - Register",
     description: "Dragon News Register Page",
@@ -5,8 +7,8 @@ export const metadata = {
 
 const RegisterPage = () => {
     return (
-        <div>
-            <h2>Register page</h2>
+        <div className="container mx-auto my-15">
+            <Register></Register>
         </div>
     );
 };

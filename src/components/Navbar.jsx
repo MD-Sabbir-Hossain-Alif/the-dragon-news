@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@heroui/react";
 import userAvater from "@/assets/user.png";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
@@ -28,7 +29,7 @@ const Navbar = () => {
                     width={41}
                 />
                 <Button className="bg-[#403F3F] text-white rounded-none px-8">
-                    Login
+                    <Link href="/login">Login</Link>
                 </Button>
             </div>
         </div>
