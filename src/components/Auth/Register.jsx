@@ -21,6 +21,7 @@ const Register = () => {
         console.log("Form submitted with:", userData);
 
         const { data, error } = await authClient.signIn.email({
+            name: userData.name,
             email: userData.email,
             photo_url: userData.photo_url,
             password: userData.password,
