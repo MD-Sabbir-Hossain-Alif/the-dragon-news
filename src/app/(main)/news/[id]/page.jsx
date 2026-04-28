@@ -2,9 +2,14 @@ import RightSideBar from "@/components/Home/RightSideBar";
 import NewsDetails from "@/components/NewsDetails/NewsDetails";
 import { getNewsDetailsById } from "@/lib/data";
 
-export const metadata = {
-    title: "The Dragon News - Details",
-    description: "Dragon News Details Page",
+export const generateMetadata = async ({ params }) => {
+    const { id } = await params;
+    // console.log(id);
+    const news = await getNewsDetailsById(id);
+    return {
+        title: news.title,
+        description: news.details,
+    };
 };
 
 const NewsDetailsPage = async ({ params }) => {
