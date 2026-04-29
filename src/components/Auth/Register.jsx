@@ -18,7 +18,7 @@ const Register = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-        console.log("Form submitted with:", userData);
+        // console.log("Form submitted with:", userData);
 
         const { data, error } = await authClient.signUp.email({
             name: userData.name,
@@ -27,7 +27,7 @@ const Register = () => {
             password: userData.password,
             rememberMe: true,
         });
-        console.log("sign up response:", { data, error });
+        // console.log("sign up response:", { data, error });
         if (error) {
             alert(error.message);
         }

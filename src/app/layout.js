@@ -1,3 +1,7 @@
+// ←←← PUT THIS AT THE VERY TOP, BEFORE ANY OTHER IMPORTS
+import { setServers } from "node:dns/promises";
+setServers(["1.1.1.1", "8.8.8.8"]);   // Cloudflare + Google DNS
+
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 

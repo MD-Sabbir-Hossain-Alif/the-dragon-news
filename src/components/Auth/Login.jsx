@@ -19,7 +19,7 @@ const Login = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-        console.log("Form submitted with:", userData);
+        // console.log("Form submitted with:", userData);
 
         const { data, error } = await authClient.signIn.email({
             email: userData.email,
@@ -27,7 +27,13 @@ const Login = () => {
             rememberMe: true,
             callbackURL: "/",
         });
-        console.log("Login response:", { data, error });
+        // console.log("Login response:", { data, error });
+        if (error) {
+            alert(error.message);
+        }
+        if (data) {
+            alert("Login Successful");
+        }
     };
     return (
         <div className="max-w-188 w-full mx-auto bg-white p-19 rounded-[5px]">

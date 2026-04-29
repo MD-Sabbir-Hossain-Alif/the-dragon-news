@@ -27,7 +27,9 @@ const Navbar = () => {
             </ul>
 
             {isPending ? (
-                <Spinner size="sm" />
+                <div className="flex-1 flex items-center justify-end">
+                    <Spinner size="sm" />
+                </div>
             ) : user ? (
                 <div className="flex-1 flex justify-end items-center gap-2.5">
                     <h2>Hello, {user.name}</h2>

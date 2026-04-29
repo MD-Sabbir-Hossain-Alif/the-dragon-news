@@ -1,39 +1,18 @@
-import { Button } from "@heroui/react";
-import React from "react";
-import {
-    FaFacebookF,
-    FaGithub,
-    FaGoogle,
-    FaInstagram,
-    FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Avatar, Description, Label, ListBox } from "@heroui/react";
 import Image from "next/image";
 import Swimming from "@/assets/swimming.png";
 import Class from "@/assets/class.png";
 import PlayGround from "@/assets/playground.png";
 import BG from "@/assets/bg.png";
+import SocialLogin from "./SocialLogin";
 
 const RightSideBar = () => {
     return (
         <>
             {/* Login section */}
             <section className="flex flex-col gap-3 mt-4">
-                <Button
-                    variant="outline"
-                    className=" text-blue-700 border border-blue-700 w-full rounded-md"
-                >
-                    <FaGoogle />
-                    Login with Google
-                </Button>
-
-                <Button
-                    variant="outline"
-                    className=" text-gray-800 border border-gray-800 w-full rounded-md"
-                >
-                    <FaGithub />
-                    Login with GitHub
-                </Button>
+                <SocialLogin></SocialLogin>
             </section>
             {/* find section */}
             <section>
