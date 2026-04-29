@@ -20,7 +20,7 @@ const NewsDetailsPage = async ({ params }) => {
     // console.log(news);
     return (
         <div className="container mx-auto">
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid grid-cols-12 gap-6 mt-10">
                 <div className="col-span-9">
                     <h4 className="text-xl font-semibold mb-5">Dragon News</h4>
                     <NewsDetails news={news}></NewsDetails>
