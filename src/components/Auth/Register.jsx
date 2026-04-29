@@ -23,12 +23,17 @@ const Register = () => {
         const { data, error } = await authClient.signUp.email({
             name: userData.name,
             email: userData.email,
-            photo_url: userData.photo_url,
+            image: userData.image,
             password: userData.password,
             rememberMe: true,
-            callbackURL: "/",
         });
         console.log("sign up response:", { data, error });
+        if (error) {
+            alert(error.message);
+        }
+        if (data) {
+            alert("Registration Successful");
+        }
     };
     return (
         <div className="max-w-188 w-full mx-auto bg-white p-19 rounded-[5px]">
@@ -56,7 +61,7 @@ const Register = () => {
                     <FieldError />
                 </TextField>
 
-                <TextField className="w-full" name="photo_url">
+                <TextField className="w-full" name="image">
                     <Label className="mb-3 text-xl font-semibold">
                         Photo URL
                     </Label>

@@ -13,7 +13,7 @@ const BreakingNews = () => {
     return (
         <div className="flex items-center bg-red-200 p-2 gap-2 container mx-auto mt-7.5">
             <Button
-                onPress={() => console.log("Button pressed")}
+                // onPress={() => console.log("Button pressed")}
                 className="bg-red-700 text-white rounded-none px-4"
             >
                 Latest
