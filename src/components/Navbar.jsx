@@ -28,9 +28,11 @@ const Navbar = () => {
                     height={41}
                     width={41}
                 />
-                <Button className="bg-[#403F3F] text-white rounded-none px-8">
-                    <Link href="/login">Login</Link>
-                </Button>
+                <Link href="/login">
+                    <Button className="bg-[#403F3F] text-white rounded-none px-8">
+                        Login
+                    </Button>
+                </Link>
             </div>
         </div>
     );

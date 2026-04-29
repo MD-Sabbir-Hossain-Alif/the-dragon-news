@@ -1,5 +1,5 @@
 "use client";
-// import { authClient } from "@/lib/auth-client";
+import { authClient } from "@/lib/auth-client";
 import { Eye, EyeSlash } from "@gravity-ui/icons";
 import {
     Button,
@@ -20,7 +20,7 @@ const Register = () => {
         const userData = Object.fromEntries(formData.entries());
         console.log("Form submitted with:", userData);
 
-        const { data, error } = await authClient.signIn.email({
+        const { data, error } = await authClient.signUp.email({
             name: userData.name,
             email: userData.email,
             photo_url: userData.photo_url,
